@@ -1,0 +1,29 @@
+/**
+ * 
+ */
+
+/**
+ * @author Giacomo
+ *
+ */
+public class MAIN {
+
+	/**
+	 * @param args
+	 */
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		
+		int[] array = new int[10];
+		int i=10;
+		System.out.println("Creazione ARRAY");
+		for(int j=0;j<i;j++)
+			array[i]=i;
+		System.out.println(array);
+		
+		
+		
+	}
+
+}
