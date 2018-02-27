@@ -1,4 +1,4 @@
-INDEX VERSION 1.130+C:\Users\Giacomo\Desktop\Linguaggi-github-workspace\Linguaggi\.metadata\.plugins\org.eclipse.jdt.core
+INDEX VERSION 1.130+C:\Users\Adriano\Desktop\Lezioni\Linguaggi di Programmazione\gitGiacomo\Linguaggi\.metadata\.plugins\org.eclipse.jdt.core
 2264556916.index
 2045990783.index
 1706309322.index
