@@ -13,9 +13,9 @@ public class Counter {
 		var = 0;
 	}
 
-	public int increment() {
+	public void increment() {
 		var++;
-		return var;
+		
 	}
 
 	public void increment(int inc) {
