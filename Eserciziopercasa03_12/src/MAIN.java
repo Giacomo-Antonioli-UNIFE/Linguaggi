@@ -23,7 +23,6 @@ public class MAIN {
 		//-------------------------------
 		// Metodo 2
 		counter.increment(2);
-		counter.increment();
 		//-------------------------------
 		counter.print();
 		counter.decrement();
