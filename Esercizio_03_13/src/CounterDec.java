@@ -16,6 +16,7 @@ public class CounterDec {
 
 	public void increase() {
 		c.increase();
+
 	}
 
 	public int getValue() {
@@ -26,11 +27,13 @@ public class CounterDec {
 		int l;
 		l = c.getValue();
 		l--;
-		c.reset();
+		this.reset();
+		// c.reset();
+
 		c.increase(l);
 	}
 
 	public void print() {
-		System.out.println(c.getValue());
+		System.out.println("Contatore\"contatore\": " + c.getValue());
 	}
 }
