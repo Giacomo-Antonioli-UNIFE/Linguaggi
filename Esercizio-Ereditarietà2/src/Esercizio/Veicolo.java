@@ -35,6 +35,6 @@ public class Veicolo {
 
 	// stampa la velocità di un oggetto di classe VEICOLO
 	static public void printVelocita(Veicolo v) {
-		System.out.println("La velocità è: " + v.velocita);
+		System.out.println("La velocità del veicolo "+v.getClass()+" è: " + v.velocita);
 	}
 }
