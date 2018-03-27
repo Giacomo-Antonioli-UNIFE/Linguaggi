@@ -1,24 +1,34 @@
 /**
  * 
  */
-package InputOutput;
+package IntputOut;
 
-import java.util.*;
+
 import java.io.*;
+import java.util.*;
 
 /**
  * @author Giacomo
  *
  */
-public class MainIO {
+public class InputTextOutputBinMain {
 
 	/**
 	 * @param args
 	 */
 	public static void main(String[] args) {
-
+		// TODO Auto-generated method stub
 		InputStreamReader reader = new InputStreamReader(System.in);
+		
+		File Filepartenza= new File("giuliva.txt");
+		File FilediTesto1= new File("PrimoFileDiTestoGenerato.txt");
+		File FileBinario1= new File("PrimoFileBinarioGenerato.txt");
+		File FileBinario2= new File("SecondoFileBinarioGenerato.txt");
+		int counter=0;
+		
 		try {
+			
+			
 			BufferedReader lettore = new BufferedReader(reader);
 			String s, nomefile, lavoro = null;
 			StringTokenizer tokenizer;
@@ -69,4 +79,5 @@ public class MainIO {
 		}
 
 	}
+
 }
