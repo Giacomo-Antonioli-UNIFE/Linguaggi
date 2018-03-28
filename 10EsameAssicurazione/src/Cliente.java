@@ -113,5 +113,14 @@ public class Cliente {
 	 * @param premioCorrente
 	 * @param codiciFilialiPassate
 	 */
+	public boolean Search(int i) {
+		boolean trovato = false;
+		for (Integer a : CodiciFilialiPassate) {
+			if (a.intValue()==i)
+				trovato = true;
+			System.out.println(a.intValue()+" " + trovato);
+		}
+		return trovato;
+	}
 
 }

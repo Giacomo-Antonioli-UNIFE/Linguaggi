@@ -22,8 +22,7 @@ public class MainAssicurazione {
 				Premiopiutasse;
 
 		// Varibili di controllo apparetenza giocatore ad una squadra
-		int code;
-
+		int count,count2;
 		// Variabile di Lettura Linea in File
 		String row;
 		StringTokenizer Tokenizer;
@@ -130,6 +129,29 @@ public class MainAssicurazione {
 				System.out.println(a);
 
 			//PUNTO 4
+			for(Filiali a : Filiali)
+			{count=count2=0;
+			System.out.println("Filiale: "+a.getNome());
+				for(Cliente  b : ListaClienti)
+				{	
+					if(a.getCodice()==b.getCodiceFiliale())
+					{count++;}
+						
+					if(b.Search(a.getCodice()))
+					{
+						count2++;
+					}
+						
+					
+				}
+				count2+=count;
+			System.out.println("Il numero dei clienti attuali della filiale è: "+count);
+			System.out.println("Il nuemro di tutti i clienti avuti dalla filiale è: "+count2);
+			}
+			
+			
+			
+			
 			
 		} catch (FileNotFoundException notfound) {
 			System.out.println("Errore. File non trovato");
