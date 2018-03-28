@@ -22,13 +22,14 @@ public class Giocatore {
 		Titolare = titolare;
 	}
 
-	/* (non-Javadoc)
+	/*
+	 * (non-Javadoc)
+	 * 
 	 * @see java.lang.Object#toString()
 	 */
 	@Override
 	public String toString() {
-		return "Giocatore [Codicesquadra=" + Codicesquadra + ", Eta=" + Eta + ", NumeroMaglia=" + NumeroMaglia
-				+ ", Cognome=" + Cognome + ", Ruolo=" + Ruolo + ", Titolare=" + Titolare + "]";
+		return Cognome + "\t" + Eta + "\t" + NumeroMaglia + "\t" + Ruolo + "\t" + Titolare+"\n";
 	}
 
 	/**

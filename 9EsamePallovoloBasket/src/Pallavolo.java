@@ -17,7 +17,8 @@ public class Pallavolo extends Squadra {
 	}
 
 	/**
-	 * @param mediaSetVinti the mediaSetVinti to set
+	 * @param mediaSetVinti
+	 *            the mediaSetVinti to set
 	 */
 	public void setMediaSetVinti(float mediaSetVinti) {
 		MediaSetVinti = mediaSetVinti;
@@ -30,8 +31,8 @@ public class Pallavolo extends Squadra {
 	 */
 	@Override
 	public String toString() {
-		return "Pallavolo [MediaSetVinti=" + MediaSetVinti + ", Partevinte=" + Partevinte + ", Partiteperse="
-				+ Partiteperse + ", Codice=" + Codice + ", Nome=" + Nome + ", Sport=" + Sport + "]";
+		return Nome + "\t" + Codice + "\t" + Partitevinte + "\t" + Partiteperse + "\t-\t" + MediaSetVinti + "\t"
+				+ Sport;
 	}
 
 }

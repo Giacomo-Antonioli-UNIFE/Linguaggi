@@ -86,7 +86,7 @@ public class MainPallovoloBasket {
 
 				}
 				// StampaLista
-
+				System.out.println("Nome\t\tCodice\tVinte\tPerse\tPMedio\tSVinti\tSport");
 				for (Squadra a : Squadre)
 					System.out.println(a);
 
@@ -102,7 +102,7 @@ public class MainPallovoloBasket {
 			inFile = new BufferedReader(fr);
 			// ---------------------------------------------
 
-			// INZIO TRY LETTURA PRIMO FILE
+			// INZIO TRY LETTURA SECONDO FILE
 			try {
 				row = inFile.readLine(); // Questo può generare IOEXception
 				while (row != null) {
@@ -118,7 +118,8 @@ public class MainPallovoloBasket {
 					row = inFile.readLine(); // Faccio un readline per leggere il nome del possibile giocatore
 												// successiva per permettere al while di controllarne l'esistenza
 												// effettiva
-
+					// Scelta in base al codice della squadra di ogni giocatore in che lista
+					// inserirlo
 					for (Squadra a : Squadre) {
 						code = a.getCodice();
 						if (code == Integer.parseInt(CodiceSquadra)) {
@@ -133,6 +134,25 @@ public class MainPallovoloBasket {
 				System.out.println(Readerror);
 			}
 
+			// FINE TRY LETTURA SECONDO FILE
+
+			// Punto 4
+
+			for (Squadra a : Squadre) {
+				// a.Membri.sort(null);
+				System.out.println();
+				System.out.println(a.getNome());
+				a.Stampapunto4();
+			}
+
+			// Punto 5
+
+			String Argomento = args[0];
+			for (Squadra a : Squadre)
+				if (Argomento.equals(a.getNome())) {
+					System.out.println("Giocatori della squadra " + args[0]);
+					System.out.println(a.Membri);
+				}
 		} catch (FileNotFoundException notfound) {
 			System.out.println("Errore. File non trovato");
 		} catch (Exception e) {

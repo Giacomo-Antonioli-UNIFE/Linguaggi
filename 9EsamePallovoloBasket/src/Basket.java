@@ -23,8 +23,8 @@ public class Basket extends Squadra {
 	 */
 	@Override
 	public String toString() {
-		return "Basket [PunteggioMedio=" + PunteggioMedio + ", Partevinte=" + Partevinte + ", Partiteperse="
-				+ Partiteperse + ", Codice=" + Codice + ", Nome=" + Nome + ", Sport=" + Sport + "]";
+		return Nome + "\t" + Codice + "\t" + Partitevinte + "\t" + Partiteperse + "\t" + PunteggioMedio + "\t-\t"
+				+ Sport;
 	}
 
 	/**
@@ -35,7 +35,8 @@ public class Basket extends Squadra {
 	}
 
 	/**
-	 * @param punteggioMedio the punteggioMedio to set
+	 * @param punteggioMedio
+	 *            the punteggioMedio to set
 	 */
 	public void setPunteggioMedio(float punteggioMedio) {
 		PunteggioMedio = punteggioMedio;

@@ -11,20 +11,18 @@ import java.util.List;
  */
 public abstract class Squadra {
 
-		protected int Partevinte, Partiteperse,Codice;
-		protected String Nome,Sport;
-		protected List<Giocatore> Membri = new LinkedList<Giocatore>();
-	
+	protected int Partitevinte, Partiteperse, Codice;
+	protected String Nome, Sport;
+	protected List<Giocatore> Membri = new LinkedList<Giocatore>();
 
-
-	public Squadra(int Partitevinte,int Partiteperse,int Codice,String Nome,String Sport)
-	{
-		this.Partevinte=Partitevinte;
-		this.Partiteperse=Partiteperse;
-		this.Codice=Codice;
-		this.Nome=Nome;
-		this.Sport=Sport;
+	public Squadra(int Partitevinte, int Partiteperse, int Codice, String Nome, String Sport) {
+		this.Partitevinte = Partitevinte;
+		this.Partiteperse = Partiteperse;
+		this.Codice = Codice;
+		this.Nome = Nome;
+		this.Sport = Sport;
 	}
+
 	/**
 	 * @return the membri
 	 */
@@ -32,8 +30,18 @@ public abstract class Squadra {
 		return Membri;
 	}
 
+	public void Stampapunto4() {
+		int count = 0;
+		for (Giocatore a : Membri) {
+			System.out.println(a.getCognome());
+			count++;
+		}
+		System.out.println("Numero Totale di Giocatori: " + count);
+	}
+
 	/**
-	 * @param membri the membri to set
+	 * @param membri
+	 *            the membri to set
 	 */
 	public void setMembri(Giocatore Elemento) {
 		Membri.add(Elemento);
@@ -43,14 +51,15 @@ public abstract class Squadra {
 	 * @return the partevinte
 	 */
 	public int getPartevinte() {
-		return Partevinte;
+		return Partitevinte;
 	}
 
 	/**
-	 * @param partevinte the partevinte to set
+	 * @param partevinte
+	 *            the partevinte to set
 	 */
 	public void setPartevinte(int partevinte) {
-		Partevinte = partevinte;
+		Partitevinte = partevinte;
 	}
 
 	/**
@@ -61,7 +70,8 @@ public abstract class Squadra {
 	}
 
 	/**
-	 * @param partiteperse the partiteperse to set
+	 * @param partiteperse
+	 *            the partiteperse to set
 	 */
 	public void setPartiteperse(int partiteperse) {
 		Partiteperse = partiteperse;
@@ -75,7 +85,8 @@ public abstract class Squadra {
 	}
 
 	/**
-	 * @param codice the codice to set
+	 * @param codice
+	 *            the codice to set
 	 */
 	public void setCodice(int codice) {
 		Codice = codice;
@@ -89,7 +100,8 @@ public abstract class Squadra {
 	}
 
 	/**
-	 * @param nome the nome to set
+	 * @param nome
+	 *            the nome to set
 	 */
 	public void setNome(String nome) {
 		Nome = nome;
@@ -103,11 +115,11 @@ public abstract class Squadra {
 	}
 
 	/**
-	 * @param sport the sport to set
+	 * @param sport
+	 *            the sport to set
 	 */
 	public void setSport(String sport) {
 		Sport = sport;
 	}
-	
-	
+
 }
