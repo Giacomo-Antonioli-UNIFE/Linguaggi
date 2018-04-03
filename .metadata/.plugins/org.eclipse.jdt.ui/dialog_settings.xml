@@ -27,7 +27,7 @@
 		<item value="-93" key="DIALOG_Y_ORIGIN"/>
 	</section>
 	<section name="GenerateConstructorUsingFieldsSelectionDialog">
-		<item value="false" key="OmitCallToSuper"/>
+		<item value="true" key="OmitCallToSuper"/>
 	</section>
 	<section name="org.eclipse.jdt.internal.ui.packageview.PackageExplorerPart">
 		<item value="2" key="layout"/>
@@ -51,7 +51,7 @@
 		<item value="519" key="DIALOG_WIDTH"/>
 		<item value="1|Segoe UI|9.0|0|WINDOWS|1|-12|0|0|0|400|0|0|0|1|0|0|0|0|Segoe UI" key="DIALOG_FONT_NAME"/>
 		<item value="678" key="DIALOG_HEIGHT"/>
-		<item value="709" key="DIALOG_X_ORIGIN"/>
+		<item value="448" key="DIALOG_X_ORIGIN"/>
 		<item value="76" key="DIALOG_Y_ORIGIN"/>
 	</section>
 	<section name="NewClassWizardPage">
@@ -63,7 +63,8 @@
 	</section>
 	<section name="SourceActionDialog.constructors">
 		<item value="false" key="SynchronizedModifier"/>
-		<item value="false" key="Comments"/>
+		<item value="true" key="Comments"/>
+		<item value="2" key="InsertPosition.v2"/>
 		<item value="1" key="VisibilityModifier"/>
 		<item value="false" key="FinalModifier"/>
 	</section>
@@ -75,14 +76,14 @@
 		<item value="528" key="DIALOG_WIDTH"/>
 		<item value="1|Segoe UI|9.0|0|WINDOWS|1|-12|0|0|0|400|0|0|0|1|0|0|0|0|Segoe UI" key="DIALOG_FONT_NAME"/>
 		<item value="696" key="DIALOG_HEIGHT"/>
-		<item value="704" key="DIALOG_X_ORIGIN"/>
+		<item value="439" key="DIALOG_X_ORIGIN"/>
 		<item value="64" key="DIALOG_Y_ORIGIN"/>
 	</section>
 	<section name="DialogBounds_GenerateToStringDialog">
 		<item value="516" key="DIALOG_WIDTH"/>
 		<item value="1|Segoe UI|9.0|0|WINDOWS|1|-12|0|0|0|400|0|0|0|1|0|0|0|0|Segoe UI" key="DIALOG_FONT_NAME"/>
 		<item value="691" key="DIALOG_HEIGHT"/>
-		<item value="710" key="DIALOG_X_ORIGIN"/>
+		<item value="451" key="DIALOG_X_ORIGIN"/>
 		<item value="68" key="DIALOG_Y_ORIGIN"/>
 	</section>
 	<section name="org.eclipse.jdt.internal.ui.text.QuickOutline">
@@ -99,9 +100,10 @@
 		<item value="400" key="height"/>
 	</section>
 	<section name="SourceActionDialog.methods">
-		<item value="true" key="IgnoreDefault"/>
+		<item value="false" key="IgnoreDefault"/>
 		<item value="false" key="SynchronizedModifier"/>
 		<item value="true" key="Comments"/>
+		<item value="2" key="InsertPosition.v2"/>
 		<item value="1" key="VisibilityModifier"/>
 		<item value="0" key="StringStyle"/>
 		<item value="0" key="ToStringTemplateSelected"/>
@@ -109,6 +111,12 @@
 		<item value="false" key="SkipNull"/>
 		<item value="false" key="FinalModifier"/>
 		<item value="10" key="LimitValue"/>
+		<list key="ToStringTemplates">
+			<item value="${object.className} [${member.name()}=${member.value}, ${otherMembers}]"/>
+		</list>
+		<list key="ToStringTemplateNames">
+			<item value="&lt;Default template&gt;"/>
+		</list>
 	</section>
 	<section name="BreadcrumbItemDropDown">
 	</section>
@@ -140,7 +148,7 @@
 		</list>
 	</section>
 	<section name="AddGetterSetterDialog">
-		<item value="false" key="SortOrdering"/>
+		<item value="true" key="SortOrdering"/>
 		<item value="false" key="RemoveFinal"/>
 	</section>
 	<section name="JavaElementSearchActions">

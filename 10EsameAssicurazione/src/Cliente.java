@@ -118,7 +118,7 @@ public class Cliente {
 		for (Integer a : CodiciFilialiPassate) {
 			if (a.intValue()==i)
 				trovato = true;
-			System.out.println(a.intValue()+" " + trovato);
+			
 		}
 		return trovato;
 	}
