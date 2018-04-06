@@ -10,6 +10,7 @@ public class Main16Ecommerce {
 		List<Cliente> Clienti = new LinkedList<Cliente>();
 		List<Vednita> Vendite = new LinkedList<Vednita>();
 		final String primofile = "clienti.txt", secondofile = "vendite.txt";
+		final File primo=new File("clienti.txt");
 		// Creazione Lista/Mappa
 
 		// Variabili di Lettura da File Filiali
@@ -24,7 +25,7 @@ public class Main16Ecommerce {
 		try {
 			// ------------------------------------------
 			// Apertura del primo file
-			FileReader fr = new FileReader(primofile); // Questo può generare FileNotFoundException
+			FileReader fr = new FileReader(primo); // Questo può generare FileNotFoundException
 			BufferedReader inFile = new BufferedReader(fr);
 			// ---------------------------------------------
 			System.out.println("Check Primo File");
